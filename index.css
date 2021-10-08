@@ -1,6 +1,20 @@
+.debug {
+    border: 1px solid red;
+}
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 body {
-    padding: 0 12.5%;
+    padding: 0;
     margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header, footer {
@@ -9,7 +23,15 @@ header, footer {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+
+    padding: 0 12.5%;
+}
+
+footer {
+    color: #e5e7eb;
+    margin-top: auto;
+    padding: 5px;
 }
 
 header p, .cta-main-text {
@@ -25,6 +47,42 @@ header li {
 img {
     background-color: gray;
     width: 50%;
+    height: 200px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul > li {
+    display: inline-block;
+    *display: inline;
+
+    margin: 0 12px;
+}
+
+a:link {
+    color: #e5e7eb;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #e5e7eb;
+}
+
+a:hover {
+    color: #fff;
+    text-shadow: 0 0 2px #e5e7eb;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
 }
 
 .push-left {
@@ -35,13 +93,28 @@ img {
     margin-left: auto;
 }
 
-.hero {
+.hero-section {
     background-color: #1F2937;
 
+    padding: 0 12.5%;
+}
+
+.hero {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+
+    padding: 5% 0;
+    height: 70vh;
+}
+
+.hero > div {
+    width: 50%;
+}
+
+.hero > img {
+    width: 50%;
 }
 
 .hero-main-text {
@@ -53,12 +126,19 @@ img {
 .hero-secondary-text, .cta-secondary-text {
     font-size: 18px;
     color: #e5e7eb;
+    padding-bottom: 10px;
 }
 
 .sign-up {
     background-color: #3882f6;
-    border-radius: 10%;
     color: #f9faf8;
+    border: 0px;
+
+    width: 20%;
+}
+
+.info-section {
+    padding: 0 12.5%;
 }
 
 .info-text {
@@ -83,6 +163,8 @@ img {
 
 .quote-section {
     background-color: #e5e7eb;
+
+    padding: 0 12.5%;
 }
 
 .quote {
@@ -91,8 +173,12 @@ img {
     color: #1f2937;
 }
 
+.cta-section {
+    padding: 0 12.5%;
+}
+
 .call-action-section {
-    color: #3882f6;
+    background-color: #3882f6;
 
     display: flex;
     flex-flow: row nowrap;
